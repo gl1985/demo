@@ -1,11 +1,11 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %æ‰“ç®—æ‰“>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"æœç£Š byæ¯•å¸…å¸…>
 <html>
   <head>
     <base href="<%=basePath%>">
@@ -28,9 +28,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <form id="pbdevj" action="" method="post">
 					<table id="ajaxtable" >
 						<tr>
-							<th>°à¼¶±àºÅ</th>
-							<th>°à¼¶Ãû³Æ</th>
-							<th>²Ù×÷</th>
+							<th>ç­çº§ç¼–å·</th>
+							<th>ç­çº§åç§°</th>
+							<th>æ“ä½œ</th>
 						</tr>
 						<c:forEach items="" var="">
 							
@@ -39,7 +39,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<table width="100%" >
 					<tr>
 						<td  align="center" height="25px">
-							<input type="button" value="ĞÂÔö°à¼¶ĞÅÏ¢" onclick="addGrade();" />
+							<input type="button" value="æ–°å¢ç­çº§ä¿¡æ¯" onclick="addGrade();" />
 						</td>
 
 					</tr>
@@ -103,7 +103,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<table id="ajaxtable" >
 						<tr>
 							<td class="textright">
-								<b>°à¼¶Ãû³Æ£º</b>
+								<b>ç­çº§åç§°ï¼š</b>
 							</td>
 							<td class="textleft">
 								<input type="text" size="30" name="">
@@ -117,8 +117,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<table width="100%" >
 					<tr>
 						<td  align="center" height="25px">
-							<input type="submit" value="±£´æ°à¼¶ĞÅÏ¢" />
-							<input type="reset" value="ÖØÖÃ" />
+							<input type="submit" value="ä¿å­˜ç­çº§ä¿¡æ¯" />
+							<input type="reset" value="é‡ç½®" />
 						</td>
 
 					</tr>
@@ -200,26 +200,26 @@ function queryStudent() {
 			<table id="ajaxtable">
 				<tr>
 					<th>
-						Ñ§Éú±àºÅ
+						å­¦ç”Ÿç¼–å·
 					</th>
 					<th>
-						°à¼¶Ãû³Æ
+						ç­çº§åç§°
 					</th>
 					<th>
-						Ñ§ÉúĞÕÃû
+						å­¦ç”Ÿå§“å
 					</th>
 					<th>
-						ĞÔ±ğ
+						æ€§åˆ«
 					</th>
 					<th>
-						ÄêÁä
+						å¹´é¾„
 					</th>
 					<th>
-						Ñ§ºÅ
+						å­¦å·
 					</th>
 
 					<th>
-						²Ù×÷
+						æ“ä½œ
 					</th>
 				</tr>
 				<c:forEach items="${}" var="">
@@ -230,7 +230,7 @@ function queryStudent() {
 			<table width="100%">
 				<tr>
 					<td align="center" height="25px">
-						<input type="button" value="ĞÂÔöÑ§ÉúĞÅÏ¢" onclick="addStudent();" />
+						<input type="button" value="æ–°å¢å­¦ç”Ÿä¿¡æ¯" onclick="addStudent();" />
 					</td>
 
 				</tr>
@@ -290,18 +290,18 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<table id="ajaxtable" >
 						<tr>
 							<td class="textright">
-								<b>°à¼¶Ãû³Æ£º</b>
+								<b>ç­çº§åç§°ï¼š</b>
 							</td>
 							<td class="textleft">
 								<select name="" class="selecttext">
-									<option value="00">--ÇëÑ¡Ôñ--</option>
+									<option value="00">--è¯·é€‰æ‹©--</option>
 									
 								</select>
 							</td>
 						</tr>
 						<tr>
 							<td class="textright">
-								<b>Ñ§ÉúĞÕÃû£º</b>
+								<b>å­¦ç”Ÿå§“åï¼š</b>
 							</td>
 							<td class="textleft">
 								<input type="text" size="30" name="">
@@ -309,7 +309,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						</tr>
 						<tr>
 							<td class="textright">
-								<b>ÄêÁä£º</b>
+								<b>å¹´é¾„ï¼š</b>
 							</td>
 							<td class="textleft">
 								<input type="text" size="30" name="">
@@ -317,19 +317,19 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						</tr>
 						<tr>
 							<td class="textright">
-								<b>ĞÔ±ğ£º</b>
+								<b>æ€§åˆ«ï¼š</b>
 							</td>
 							<td class="textleft">
 								<select name=" class="selecttext">
-									<option value="00">--ÇëÑ¡Ôñ--</option>
-									<option value="01">ÄĞ</option>
-									<option value="02">Å®</option>
+									<option value="00">--è¯·é€‰æ‹©--</option>
+									<option value="01">ç”·</option>
+									<option value="02">å¥³</option>
 								</select>
 							</td>
 						</tr>
 						<tr>
 							<td class="textright">
-								<b>Ñ§ºÅ£º</b>
+								<b>å­¦å·ï¼š</b>
 							</td>
 							<td class="textleft">
 								<input type="text" size="30" name="">
@@ -343,8 +343,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<table width="100%" >
 					<tr>
 						<td  align="center" height="25px">
-							<input type="submit" value="±£´æÑ§ÉúĞÅÏ¢" />
-							<input type="reset" value="ÖØÖÃ" />
+							<input type="submit" value="ä¿å­˜å­¦ç”Ÿä¿¡æ¯" />
+							<input type="reset" value="é‡ç½®" />
 						</td>
 
 					</tr>
